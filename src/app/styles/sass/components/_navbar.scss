@@ -1,0 +1,16 @@
+.nav {
+  @include flex-layout;
+  list-style-type: none;
+  background-color: $navigation-primary;
+  color: $text-contrast;
+  font-size: $font-sm;
+  padding: 5px;
+  &__itemLinks {
+    text-decoration: none;
+    color: $text-contrast;
+  }
+  &__itemLinks:hover {
+    text-decoration: none;
+    color: lighten($accent-secondary, 5%);
+  }
+}
